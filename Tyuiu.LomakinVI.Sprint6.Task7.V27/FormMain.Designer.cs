@@ -32,30 +32,30 @@ namespace Tyuiu.LomakinVI.Sprint6.Task7.V27
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panelButtons_LVI = new System.Windows.Forms.Panel();
+            this.buttonHelp_LVI = new System.Windows.Forms.Button();
+            this.buttonSaveFile_LVI = new System.Windows.Forms.Button();
+            this.buttonDone_LVI = new System.Windows.Forms.Button();
+            this.buttonOpenFile_LVI = new System.Windows.Forms.Button();
             this.panelTask_LVI = new System.Windows.Forms.Panel();
-            this.panelInMatrix_LVI = new System.Windows.Forms.Panel();
-            this.splitter1 = new System.Windows.Forms.Splitter();
-            this.panelOutMatrix_LVI = new System.Windows.Forms.Panel();
             this.groupBoxTask_LVI = new System.Windows.Forms.GroupBox();
             this.textBoxTask_LVI = new System.Windows.Forms.TextBox();
+            this.panelInMatrix_LVI = new System.Windows.Forms.Panel();
             this.groupBoxInMatrix_LVI = new System.Windows.Forms.GroupBox();
             this.dataGridViewInMatrix_LVI = new System.Windows.Forms.DataGridView();
+            this.splitterInAndOut = new System.Windows.Forms.Splitter();
+            this.panelOutMatrix_LVI = new System.Windows.Forms.Panel();
             this.groupBoxOutMatrix_LVI = new System.Windows.Forms.GroupBox();
             this.dataGridViewOutMatrix_LVI = new System.Windows.Forms.DataGridView();
             this.openFileDialogTask_LVI = new System.Windows.Forms.OpenFileDialog();
             this.toolTipButton_LVI = new System.Windows.Forms.ToolTip(this.components);
             this.saveFileDialogMatrix_LVI = new System.Windows.Forms.SaveFileDialog();
-            this.buttonHelp_LVI = new System.Windows.Forms.Button();
-            this.buttonSaveFile_LVI = new System.Windows.Forms.Button();
-            this.buttonDone_LVI = new System.Windows.Forms.Button();
-            this.buttonOpenFile_LVI = new System.Windows.Forms.Button();
             this.panelButtons_LVI.SuspendLayout();
             this.panelTask_LVI.SuspendLayout();
-            this.panelInMatrix_LVI.SuspendLayout();
-            this.panelOutMatrix_LVI.SuspendLayout();
             this.groupBoxTask_LVI.SuspendLayout();
+            this.panelInMatrix_LVI.SuspendLayout();
             this.groupBoxInMatrix_LVI.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInMatrix_LVI)).BeginInit();
+            this.panelOutMatrix_LVI.SuspendLayout();
             this.groupBoxOutMatrix_LVI.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOutMatrix_LVI)).BeginInit();
             this.SuspendLayout();
@@ -73,127 +73,6 @@ namespace Tyuiu.LomakinVI.Sprint6.Task7.V27
             this.panelButtons_LVI.Name = "panelButtons_LVI";
             this.panelButtons_LVI.Size = new System.Drawing.Size(1227, 80);
             this.panelButtons_LVI.TabIndex = 0;
-            // 
-            // panelTask_LVI
-            // 
-            this.panelTask_LVI.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panelTask_LVI.Controls.Add(this.groupBoxTask_LVI);
-            this.panelTask_LVI.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTask_LVI.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.panelTask_LVI.Location = new System.Drawing.Point(0, 80);
-            this.panelTask_LVI.Name = "panelTask_LVI";
-            this.panelTask_LVI.Size = new System.Drawing.Size(1227, 116);
-            this.panelTask_LVI.TabIndex = 1;
-            // 
-            // panelInMatrix_LVI
-            // 
-            this.panelInMatrix_LVI.BackColor = System.Drawing.Color.LightGray;
-            this.panelInMatrix_LVI.Controls.Add(this.groupBoxInMatrix_LVI);
-            this.panelInMatrix_LVI.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelInMatrix_LVI.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.panelInMatrix_LVI.Location = new System.Drawing.Point(0, 196);
-            this.panelInMatrix_LVI.Name = "panelInMatrix_LVI";
-            this.panelInMatrix_LVI.Size = new System.Drawing.Size(583, 458);
-            this.panelInMatrix_LVI.TabIndex = 2;
-            // 
-            // splitter1
-            // 
-            this.splitter1.Location = new System.Drawing.Point(583, 196);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 458);
-            this.splitter1.TabIndex = 3;
-            this.splitter1.TabStop = false;
-            // 
-            // panelOutMatrix_LVI
-            // 
-            this.panelOutMatrix_LVI.BackColor = System.Drawing.Color.Silver;
-            this.panelOutMatrix_LVI.Controls.Add(this.groupBoxOutMatrix_LVI);
-            this.panelOutMatrix_LVI.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelOutMatrix_LVI.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.panelOutMatrix_LVI.Location = new System.Drawing.Point(586, 196);
-            this.panelOutMatrix_LVI.Name = "panelOutMatrix_LVI";
-            this.panelOutMatrix_LVI.Size = new System.Drawing.Size(641, 458);
-            this.panelOutMatrix_LVI.TabIndex = 4;
-            // 
-            // groupBoxTask_LVI
-            // 
-            this.groupBoxTask_LVI.Controls.Add(this.textBoxTask_LVI);
-            this.groupBoxTask_LVI.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBoxTask_LVI.Location = new System.Drawing.Point(0, 0);
-            this.groupBoxTask_LVI.Name = "groupBoxTask_LVI";
-            this.groupBoxTask_LVI.Size = new System.Drawing.Size(1227, 116);
-            this.groupBoxTask_LVI.TabIndex = 0;
-            this.groupBoxTask_LVI.TabStop = false;
-            this.groupBoxTask_LVI.Text = "Условие";
-            // 
-            // textBoxTask_LVI
-            // 
-            this.textBoxTask_LVI.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxTask_LVI.Location = new System.Drawing.Point(3, 21);
-            this.textBoxTask_LVI.Multiline = true;
-            this.textBoxTask_LVI.Name = "textBoxTask_LVI";
-            this.textBoxTask_LVI.ReadOnly = true;
-            this.textBoxTask_LVI.Size = new System.Drawing.Size(1221, 92);
-            this.textBoxTask_LVI.TabIndex = 0;
-            this.textBoxTask_LVI.Text = resources.GetString("textBoxTask_LVI.Text");
-            // 
-            // groupBoxInMatrix_LVI
-            // 
-            this.groupBoxInMatrix_LVI.BackColor = System.Drawing.Color.Silver;
-            this.groupBoxInMatrix_LVI.Controls.Add(this.dataGridViewInMatrix_LVI);
-            this.groupBoxInMatrix_LVI.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBoxInMatrix_LVI.Location = new System.Drawing.Point(0, 0);
-            this.groupBoxInMatrix_LVI.Name = "groupBoxInMatrix_LVI";
-            this.groupBoxInMatrix_LVI.Size = new System.Drawing.Size(583, 458);
-            this.groupBoxInMatrix_LVI.TabIndex = 0;
-            this.groupBoxInMatrix_LVI.TabStop = false;
-            this.groupBoxInMatrix_LVI.Text = "Ввод:";
-            // 
-            // dataGridViewInMatrix_LVI
-            // 
-            this.dataGridViewInMatrix_LVI.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewInMatrix_LVI.ColumnHeadersVisible = false;
-            this.dataGridViewInMatrix_LVI.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewInMatrix_LVI.Location = new System.Drawing.Point(3, 21);
-            this.dataGridViewInMatrix_LVI.Name = "dataGridViewInMatrix_LVI";
-            this.dataGridViewInMatrix_LVI.RowHeadersVisible = false;
-            this.dataGridViewInMatrix_LVI.RowHeadersWidth = 51;
-            this.dataGridViewInMatrix_LVI.RowTemplate.Height = 27;
-            this.dataGridViewInMatrix_LVI.Size = new System.Drawing.Size(577, 434);
-            this.dataGridViewInMatrix_LVI.TabIndex = 0;
-            // 
-            // groupBoxOutMatrix_LVI
-            // 
-            this.groupBoxOutMatrix_LVI.Controls.Add(this.dataGridViewOutMatrix_LVI);
-            this.groupBoxOutMatrix_LVI.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBoxOutMatrix_LVI.Location = new System.Drawing.Point(0, 0);
-            this.groupBoxOutMatrix_LVI.Name = "groupBoxOutMatrix_LVI";
-            this.groupBoxOutMatrix_LVI.Size = new System.Drawing.Size(641, 458);
-            this.groupBoxOutMatrix_LVI.TabIndex = 0;
-            this.groupBoxOutMatrix_LVI.TabStop = false;
-            this.groupBoxOutMatrix_LVI.Text = "Вывод:";
-            // 
-            // dataGridViewOutMatrix_LVI
-            // 
-            this.dataGridViewOutMatrix_LVI.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewOutMatrix_LVI.ColumnHeadersVisible = false;
-            this.dataGridViewOutMatrix_LVI.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewOutMatrix_LVI.Location = new System.Drawing.Point(3, 21);
-            this.dataGridViewOutMatrix_LVI.Name = "dataGridViewOutMatrix_LVI";
-            this.dataGridViewOutMatrix_LVI.RowHeadersVisible = false;
-            this.dataGridViewOutMatrix_LVI.RowHeadersWidth = 51;
-            this.dataGridViewOutMatrix_LVI.RowTemplate.Height = 27;
-            this.dataGridViewOutMatrix_LVI.Size = new System.Drawing.Size(635, 434);
-            this.dataGridViewOutMatrix_LVI.TabIndex = 0;
-            // 
-            // openFileDialogTask_LVI
-            // 
-            this.openFileDialogTask_LVI.FileName = "openFileDialog1";
-            // 
-            // toolTipButton_LVI
-            // 
-            this.toolTipButton_LVI.IsBalloon = true;
-            this.toolTipButton_LVI.ToolTipTitle = "Подсказка";
             // 
             // buttonHelp_LVI
             // 
@@ -250,13 +129,134 @@ namespace Tyuiu.LomakinVI.Sprint6.Task7.V27
             this.buttonOpenFile_LVI.Click += new System.EventHandler(this.buttonOpenFile_LVI_Click);
             this.buttonOpenFile_LVI.MouseEnter += new System.EventHandler(this.buttonOpenFile_LVI_MouseEnter);
             // 
+            // panelTask_LVI
+            // 
+            this.panelTask_LVI.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.panelTask_LVI.Controls.Add(this.groupBoxTask_LVI);
+            this.panelTask_LVI.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTask_LVI.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.panelTask_LVI.Location = new System.Drawing.Point(0, 80);
+            this.panelTask_LVI.Name = "panelTask_LVI";
+            this.panelTask_LVI.Size = new System.Drawing.Size(1227, 116);
+            this.panelTask_LVI.TabIndex = 1;
+            // 
+            // groupBoxTask_LVI
+            // 
+            this.groupBoxTask_LVI.Controls.Add(this.textBoxTask_LVI);
+            this.groupBoxTask_LVI.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBoxTask_LVI.Location = new System.Drawing.Point(0, 0);
+            this.groupBoxTask_LVI.Name = "groupBoxTask_LVI";
+            this.groupBoxTask_LVI.Size = new System.Drawing.Size(1227, 116);
+            this.groupBoxTask_LVI.TabIndex = 0;
+            this.groupBoxTask_LVI.TabStop = false;
+            this.groupBoxTask_LVI.Text = "Условие";
+            // 
+            // textBoxTask_LVI
+            // 
+            this.textBoxTask_LVI.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxTask_LVI.Location = new System.Drawing.Point(3, 21);
+            this.textBoxTask_LVI.Multiline = true;
+            this.textBoxTask_LVI.Name = "textBoxTask_LVI";
+            this.textBoxTask_LVI.ReadOnly = true;
+            this.textBoxTask_LVI.Size = new System.Drawing.Size(1221, 92);
+            this.textBoxTask_LVI.TabIndex = 0;
+            this.textBoxTask_LVI.Text = resources.GetString("textBoxTask_LVI.Text");
+            // 
+            // panelInMatrix_LVI
+            // 
+            this.panelInMatrix_LVI.BackColor = System.Drawing.Color.LightGray;
+            this.panelInMatrix_LVI.Controls.Add(this.groupBoxInMatrix_LVI);
+            this.panelInMatrix_LVI.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelInMatrix_LVI.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.panelInMatrix_LVI.Location = new System.Drawing.Point(0, 196);
+            this.panelInMatrix_LVI.Name = "panelInMatrix_LVI";
+            this.panelInMatrix_LVI.Size = new System.Drawing.Size(583, 458);
+            this.panelInMatrix_LVI.TabIndex = 2;
+            // 
+            // groupBoxInMatrix_LVI
+            // 
+            this.groupBoxInMatrix_LVI.BackColor = System.Drawing.Color.Silver;
+            this.groupBoxInMatrix_LVI.Controls.Add(this.dataGridViewInMatrix_LVI);
+            this.groupBoxInMatrix_LVI.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBoxInMatrix_LVI.Location = new System.Drawing.Point(0, 0);
+            this.groupBoxInMatrix_LVI.Name = "groupBoxInMatrix_LVI";
+            this.groupBoxInMatrix_LVI.Size = new System.Drawing.Size(583, 458);
+            this.groupBoxInMatrix_LVI.TabIndex = 0;
+            this.groupBoxInMatrix_LVI.TabStop = false;
+            this.groupBoxInMatrix_LVI.Text = "Ввод:";
+            // 
+            // dataGridViewInMatrix_LVI
+            // 
+            this.dataGridViewInMatrix_LVI.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewInMatrix_LVI.ColumnHeadersVisible = false;
+            this.dataGridViewInMatrix_LVI.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewInMatrix_LVI.Location = new System.Drawing.Point(3, 21);
+            this.dataGridViewInMatrix_LVI.Name = "dataGridViewInMatrix_LVI";
+            this.dataGridViewInMatrix_LVI.RowHeadersVisible = false;
+            this.dataGridViewInMatrix_LVI.RowHeadersWidth = 51;
+            this.dataGridViewInMatrix_LVI.RowTemplate.Height = 27;
+            this.dataGridViewInMatrix_LVI.Size = new System.Drawing.Size(577, 434);
+            this.dataGridViewInMatrix_LVI.TabIndex = 0;
+            // 
+            // splitterInAndOut
+            // 
+            this.splitterInAndOut.Location = new System.Drawing.Point(583, 196);
+            this.splitterInAndOut.Name = "splitterInAndOut";
+            this.splitterInAndOut.Size = new System.Drawing.Size(3, 458);
+            this.splitterInAndOut.TabIndex = 3;
+            this.splitterInAndOut.TabStop = false;
+            // 
+            // panelOutMatrix_LVI
+            // 
+            this.panelOutMatrix_LVI.BackColor = System.Drawing.Color.Silver;
+            this.panelOutMatrix_LVI.Controls.Add(this.groupBoxOutMatrix_LVI);
+            this.panelOutMatrix_LVI.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelOutMatrix_LVI.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.panelOutMatrix_LVI.Location = new System.Drawing.Point(586, 196);
+            this.panelOutMatrix_LVI.Name = "panelOutMatrix_LVI";
+            this.panelOutMatrix_LVI.Size = new System.Drawing.Size(641, 458);
+            this.panelOutMatrix_LVI.TabIndex = 4;
+            // 
+            // groupBoxOutMatrix_LVI
+            // 
+            this.groupBoxOutMatrix_LVI.Controls.Add(this.dataGridViewOutMatrix_LVI);
+            this.groupBoxOutMatrix_LVI.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBoxOutMatrix_LVI.Location = new System.Drawing.Point(0, 0);
+            this.groupBoxOutMatrix_LVI.Name = "groupBoxOutMatrix_LVI";
+            this.groupBoxOutMatrix_LVI.Size = new System.Drawing.Size(641, 458);
+            this.groupBoxOutMatrix_LVI.TabIndex = 0;
+            this.groupBoxOutMatrix_LVI.TabStop = false;
+            this.groupBoxOutMatrix_LVI.Text = "Вывод:";
+            // 
+            // dataGridViewOutMatrix_LVI
+            // 
+            this.dataGridViewOutMatrix_LVI.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewOutMatrix_LVI.ColumnHeadersVisible = false;
+            this.dataGridViewOutMatrix_LVI.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewOutMatrix_LVI.Location = new System.Drawing.Point(3, 21);
+            this.dataGridViewOutMatrix_LVI.Name = "dataGridViewOutMatrix_LVI";
+            this.dataGridViewOutMatrix_LVI.RowHeadersVisible = false;
+            this.dataGridViewOutMatrix_LVI.RowHeadersWidth = 51;
+            this.dataGridViewOutMatrix_LVI.RowTemplate.Height = 27;
+            this.dataGridViewOutMatrix_LVI.Size = new System.Drawing.Size(635, 434);
+            this.dataGridViewOutMatrix_LVI.TabIndex = 0;
+            // 
+            // openFileDialogTask_LVI
+            // 
+            this.openFileDialogTask_LVI.FileName = "openFileDialog1";
+            // 
+            // toolTipButton_LVI
+            // 
+            this.toolTipButton_LVI.IsBalloon = true;
+            this.toolTipButton_LVI.ToolTipTitle = "Подсказка";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1227, 654);
             this.Controls.Add(this.panelOutMatrix_LVI);
-            this.Controls.Add(this.splitter1);
+            this.Controls.Add(this.splitterInAndOut);
             this.Controls.Add(this.panelInMatrix_LVI);
             this.Controls.Add(this.panelTask_LVI);
             this.Controls.Add(this.panelButtons_LVI);
@@ -267,12 +267,12 @@ namespace Tyuiu.LomakinVI.Sprint6.Task7.V27
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelButtons_LVI.ResumeLayout(false);
             this.panelTask_LVI.ResumeLayout(false);
-            this.panelInMatrix_LVI.ResumeLayout(false);
-            this.panelOutMatrix_LVI.ResumeLayout(false);
             this.groupBoxTask_LVI.ResumeLayout(false);
             this.groupBoxTask_LVI.PerformLayout();
+            this.panelInMatrix_LVI.ResumeLayout(false);
             this.groupBoxInMatrix_LVI.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInMatrix_LVI)).EndInit();
+            this.panelOutMatrix_LVI.ResumeLayout(false);
             this.groupBoxOutMatrix_LVI.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOutMatrix_LVI)).EndInit();
             this.ResumeLayout(false);
@@ -284,7 +284,7 @@ namespace Tyuiu.LomakinVI.Sprint6.Task7.V27
         private System.Windows.Forms.Panel panelButtons_LVI;
         private System.Windows.Forms.Panel panelTask_LVI;
         private System.Windows.Forms.Panel panelInMatrix_LVI;
-        private System.Windows.Forms.Splitter splitter1;
+        private System.Windows.Forms.Splitter splitterInAndOut;
         private System.Windows.Forms.Panel panelOutMatrix_LVI;
         private System.Windows.Forms.Button buttonOpenFile_LVI;
         private System.Windows.Forms.Button buttonHelp_LVI;
