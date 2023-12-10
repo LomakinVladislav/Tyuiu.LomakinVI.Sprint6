@@ -18,8 +18,8 @@ namespace Tyuiu.LomakinVI.Sprint6.Task7.V27
         {
             InitializeComponent();
 
-            openFileDialogTask_LVI.Filter = "Значения, резделённые запятыми(*.csv)|*.scv|Все файлы(*.*)|*.*";
-            saveFileDialogMatrix_LVI.Filter = "Значения, резделённые запятыми(*.csv)|*.scv|Все файлы(*.*)|*.*";
+            openFileDialogTask_LVI.Filter = "Значения, разделённые запятыми(*.csv)|*.scv|Все файлы(*.*)|*.*";
+            saveFileDialogMatrix_LVI.Filter = "Значения, разделённые запятыми(*.csv)|*.scv|Все файлы(*.*)|*.*";
         }
 
         static int rows;
