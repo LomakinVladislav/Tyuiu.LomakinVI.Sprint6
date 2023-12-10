@@ -31,9 +31,9 @@ namespace Tyuiu.LomakinVI.Sprint6.Task6.V12
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAbout));
             this.buttonOK_LVI = new System.Windows.Forms.Button();
-            this.LabelInfo = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.LabelInfo_LVI = new System.Windows.Forms.Label();
+            this.pictureBoxAvatar_LVI = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar_LVI)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonOK_LVI
@@ -46,33 +46,33 @@ namespace Tyuiu.LomakinVI.Sprint6.Task6.V12
             this.buttonOK_LVI.UseVisualStyleBackColor = true;
             this.buttonOK_LVI.Click += new System.EventHandler(this.buttonOK_LVI_Click);
             // 
-            // LabelInfo
+            // LabelInfo_LVI
             // 
-            this.LabelInfo.AutoSize = true;
-            this.LabelInfo.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabelInfo.Location = new System.Drawing.Point(292, 76);
-            this.LabelInfo.Name = "LabelInfo";
-            this.LabelInfo.Size = new System.Drawing.Size(476, 242);
-            this.LabelInfo.TabIndex = 1;
-            this.LabelInfo.Text = resources.GetString("LabelInfo.Text");
+            this.LabelInfo_LVI.AutoSize = true;
+            this.LabelInfo_LVI.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabelInfo_LVI.Location = new System.Drawing.Point(292, 76);
+            this.LabelInfo_LVI.Name = "LabelInfo_LVI";
+            this.LabelInfo_LVI.Size = new System.Drawing.Size(476, 242);
+            this.LabelInfo_LVI.TabIndex = 1;
+            this.LabelInfo_LVI.Text = resources.GetString("LabelInfo_LVI.Text");
             // 
-            // pictureBox1
+            // pictureBoxAvatar_LVI
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(38, 56);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(234, 343);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxAvatar_LVI.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAvatar_LVI.Image")));
+            this.pictureBoxAvatar_LVI.Location = new System.Drawing.Point(38, 56);
+            this.pictureBoxAvatar_LVI.Name = "pictureBoxAvatar_LVI";
+            this.pictureBoxAvatar_LVI.Size = new System.Drawing.Size(234, 343);
+            this.pictureBoxAvatar_LVI.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxAvatar_LVI.TabIndex = 2;
+            this.pictureBoxAvatar_LVI.TabStop = false;
             // 
             // FormAbout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.LabelInfo);
+            this.Controls.Add(this.pictureBoxAvatar_LVI);
+            this.Controls.Add(this.LabelInfo_LVI);
             this.Controls.Add(this.buttonOK_LVI);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -80,7 +80,7 @@ namespace Tyuiu.LomakinVI.Sprint6.Task6.V12
             this.Name = "FormAbout";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "О программе";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar_LVI)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -89,7 +89,7 @@ namespace Tyuiu.LomakinVI.Sprint6.Task6.V12
         #endregion
 
         private System.Windows.Forms.Button buttonOK_LVI;
-        private System.Windows.Forms.Label LabelInfo;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label LabelInfo_LVI;
+        private System.Windows.Forms.PictureBox pictureBoxAvatar_LVI;
     }
 }
