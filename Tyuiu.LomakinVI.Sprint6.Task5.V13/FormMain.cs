@@ -21,7 +21,7 @@ namespace Tyuiu.LomakinVI.Sprint6.Task5.V13
 
         DataService ds = new DataService();
 
-        string path = $@"C:\Users\OneSmiLe\source\repos\Tyuiu.LomakinVI.Sprint6\Tyuiu.LomakinVI.Sprint6.Task5.V13\bin\Debug\InPutFileTask5V13.txt";
+        string path = $@"{Directory.GetCurrentDirectory()}\InPutFileTask5V13.txt";
 
         private void buttonDone_LVI_Click(object sender, EventArgs e)
         {
