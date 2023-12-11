@@ -84,6 +84,7 @@ namespace Tyuiu.LomakinVI.Sprint6.Task7.V27
             this.buttonHelp_LVI.Name = "buttonHelp_LVI";
             this.buttonHelp_LVI.Size = new System.Drawing.Size(90, 74);
             this.buttonHelp_LVI.TabIndex = 0;
+            this.toolTipButton_LVI.SetToolTip(this.buttonHelp_LVI, "Сведения о программе");
             this.buttonHelp_LVI.UseVisualStyleBackColor = true;
             this.buttonHelp_LVI.Click += new System.EventHandler(this.buttonHelp_LVI_Click);
             this.buttonHelp_LVI.MouseEnter += new System.EventHandler(this.buttonHelp_LVI_MouseEnter);
@@ -98,6 +99,7 @@ namespace Tyuiu.LomakinVI.Sprint6.Task7.V27
             this.buttonSaveFile_LVI.Name = "buttonSaveFile_LVI";
             this.buttonSaveFile_LVI.Size = new System.Drawing.Size(90, 74);
             this.buttonSaveFile_LVI.TabIndex = 0;
+            this.toolTipButton_LVI.SetToolTip(this.buttonSaveFile_LVI, "Сохранить обработанные данные в файл в формате CSV");
             this.buttonSaveFile_LVI.UseVisualStyleBackColor = true;
             this.buttonSaveFile_LVI.Click += new System.EventHandler(this.buttonSaveFile_LVI_Click);
             this.buttonSaveFile_LVI.MouseEnter += new System.EventHandler(this.buttonSaveFile_LVI_MouseEnter);
@@ -112,6 +114,7 @@ namespace Tyuiu.LomakinVI.Sprint6.Task7.V27
             this.buttonDone_LVI.Name = "buttonDone_LVI";
             this.buttonDone_LVI.Size = new System.Drawing.Size(90, 74);
             this.buttonDone_LVI.TabIndex = 0;
+            this.toolTipButton_LVI.SetToolTip(this.buttonDone_LVI, "Выполнить обработку данных");
             this.buttonDone_LVI.UseVisualStyleBackColor = true;
             this.buttonDone_LVI.Click += new System.EventHandler(this.buttonDone_LVI_Click);
             this.buttonDone_LVI.MouseEnter += new System.EventHandler(this.buttonDone_LVI_MouseEnter);
@@ -125,6 +128,7 @@ namespace Tyuiu.LomakinVI.Sprint6.Task7.V27
             this.buttonOpenFile_LVI.Name = "buttonOpenFile_LVI";
             this.buttonOpenFile_LVI.Size = new System.Drawing.Size(90, 74);
             this.buttonOpenFile_LVI.TabIndex = 0;
+            this.toolTipButton_LVI.SetToolTip(this.buttonOpenFile_LVI, "Открыть файл для обработки данных в формате CSV");
             this.buttonOpenFile_LVI.UseVisualStyleBackColor = true;
             this.buttonOpenFile_LVI.Click += new System.EventHandler(this.buttonOpenFile_LVI_Click);
             this.buttonOpenFile_LVI.MouseEnter += new System.EventHandler(this.buttonOpenFile_LVI_MouseEnter);
@@ -248,6 +252,7 @@ namespace Tyuiu.LomakinVI.Sprint6.Task7.V27
             // toolTipButton_LVI
             // 
             this.toolTipButton_LVI.IsBalloon = true;
+            this.toolTipButton_LVI.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTipButton_LVI.ToolTipTitle = "Подсказка";
             // 
             // FormMain
