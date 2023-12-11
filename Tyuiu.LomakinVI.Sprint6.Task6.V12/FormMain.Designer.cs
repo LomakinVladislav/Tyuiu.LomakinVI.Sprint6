@@ -45,8 +45,8 @@ namespace Tyuiu.LomakinVI.Sprint6.Task6.V12
             this.textBoxIn_LVI = new System.Windows.Forms.TextBox();
             this.panelOutput_LVI = new System.Windows.Forms.Panel();
             this.groupBoxOut_LVI = new System.Windows.Forms.GroupBox();
-            this.textBoxOut_LVI = new System.Windows.Forms.TextBox();
             this.splitter1 = new System.Windows.Forms.Splitter();
+            this.textBoxOut_LVI = new System.Windows.Forms.TextBox();
             this.groupBoxTask_LVI.SuspendLayout();
             this.panelButtons_LVI.SuspendLayout();
             this.panelTask_LVI.SuspendLayout();
@@ -85,6 +85,7 @@ namespace Tyuiu.LomakinVI.Sprint6.Task6.V12
             // 
             // toolTip_LVI
             // 
+            this.toolTip_LVI.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTip_LVI.ToolTipTitle = "Подсказка";
             // 
             // buttonDone_LVI
@@ -205,6 +206,14 @@ namespace Tyuiu.LomakinVI.Sprint6.Task6.V12
             this.groupBoxOut_LVI.TabStop = false;
             this.groupBoxOut_LVI.Text = "Вывод";
             // 
+            // splitter1
+            // 
+            this.splitter1.Location = new System.Drawing.Point(3, 21);
+            this.splitter1.Name = "splitter1";
+            this.splitter1.Size = new System.Drawing.Size(3, 347);
+            this.splitter1.TabIndex = 1;
+            this.splitter1.TabStop = false;
+            // 
             // textBoxOut_LVI
             // 
             this.textBoxOut_LVI.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -213,14 +222,6 @@ namespace Tyuiu.LomakinVI.Sprint6.Task6.V12
             this.textBoxOut_LVI.Name = "textBoxOut_LVI";
             this.textBoxOut_LVI.Size = new System.Drawing.Size(732, 347);
             this.textBoxOut_LVI.TabIndex = 0;
-            // 
-            // splitter1
-            // 
-            this.splitter1.Location = new System.Drawing.Point(3, 21);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 347);
-            this.splitter1.TabIndex = 1;
-            this.splitter1.TabStop = false;
             // 
             // FormMain
             // 

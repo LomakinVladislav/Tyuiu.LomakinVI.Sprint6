@@ -270,6 +270,7 @@ namespace Tyuiu.LomakinVI.Sprint6.Task7.V27
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Спринт 6 | Таск 7 | Вариант 27 | Ломакин В. И.";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.panelButtons_LVI.ResumeLayout(false);
             this.panelTask_LVI.ResumeLayout(false);
             this.groupBoxTask_LVI.ResumeLayout(false);

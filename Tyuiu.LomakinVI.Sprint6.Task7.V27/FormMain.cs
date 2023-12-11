@@ -174,5 +174,22 @@ namespace Tyuiu.LomakinVI.Sprint6.Task7.V27
         {
             toolTipButton_LVI.ToolTipTitle = "Справка";
         }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            dataGridViewOutMatrix_LVI.RowCount = 50;
+            dataGridViewInMatrix_LVI.RowCount = 50;
+
+            dataGridViewInMatrix_LVI.ColumnCount = 50;
+            dataGridViewOutMatrix_LVI.ColumnCount = 50;
+
+            panelInMatrix_LVI.Width = this.Width / 2;
+
+            for (int i = 0; i < 50; i++)
+            {
+                dataGridViewInMatrix_LVI.Columns[i].Width = 40;
+                dataGridViewOutMatrix_LVI.Columns[i].Width = 40;
+            }
+        }
     }
 }
